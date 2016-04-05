@@ -10,7 +10,7 @@ _Scripts in Bash and NodeJS for interacting with the Systemapic API_
 
 Create your own `dataset.json` file from [`dataset.json.template`](https://github.com/systemapic/api-scripts/blob/master/dataset.json.template). 
 
-```json
+```javascript
 {
     "folder" : "/home/test-snow/", 	// absolute path of folder containing .tiff's
     "title" : "Snow raster 11" 		// name of cube
