@@ -8,7 +8,7 @@ _Scripts in Bash and NodeJS for interacting with the Systemapic API_
 
 #### Upload data
 
-Create your own `dataset.json` file from [`dataset.json.template`](https://github.com/systemapic/api-scripts/blob/master/dataset.json.template). 
+Create your own `datacube.json` file from [`datacube.json.template`](https://github.com/systemapic/api-scripts/blob/master/datacube.json.template). 
 
 ```javascript
 {
@@ -18,4 +18,4 @@ Create your own `dataset.json` file from [`dataset.json.template`](https://githu
 ```
 
 **Upload and create cube with:**   
-`./upload_dataset.sh dataset.json`.
+`./upload_datacube.sh datacube.json`.
