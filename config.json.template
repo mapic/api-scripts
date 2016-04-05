@@ -2,5 +2,5 @@
 	"domain" : "dev.systemapic.com",
 	"username" : "knutole",
 	"password" : "mysecretpassword",
-	"debug" : true
+	"debug" : false
 }

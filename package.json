@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/systemapic/api-scripts",
   "dependencies": {
+    "async": "^2.0.0-rc.2",
     "fs-extra": "^0.26.7",
     "lodash": "^4.8.2",
+    "node-dir": "^0.1.11",
     "supertest": "^1.2.0"
   }
 }
