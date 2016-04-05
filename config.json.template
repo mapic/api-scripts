@@ -1,6 +1,6 @@
 {
 	"domain" : "dev.systemapic.com",
-	"username" : "knutole",
+	"username" : "username OR email",
 	"password" : "mysecretpassword",
 	"debug" : false
 }
