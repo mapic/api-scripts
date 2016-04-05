@@ -17,15 +17,15 @@ Create your own `datacube.json` file from [`datacube.json.template`](https://git
 }
 ```
 
-**Run script like thus:**   
+**Then run script:**   
 `./upload_datacube.sh datacube.json`.
 
-This will do the following:
-1. Create a cube
-2. Upload all rasters in folder
-3. Add all rasters to cube
-4. Create a project
-5. Add cube layer to project
+This will do the following:  
+1. Create a cube  
+2. Upload all rasters in folder  
+3. Add all rasters to cube  
+4. Create a project  
+5. Add cube layer to project  
 
 
 ----
