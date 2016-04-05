@@ -9,7 +9,7 @@ function edit_config() {
 function check_auth() {
     AUTHENTICATED=$(node lib/test.js)
     if [ "$AUTHENTICATED" = true ] ; then
-        echo "You're now ready to use the Systemapic API!"
+        echo "Successfully authenticated! You're now ready to use the Systemapic API."
     else
         echo "Authentication failed! Please revise your config."
         edit_config
@@ -18,7 +18,7 @@ function check_auth() {
 
 
 echo "Installing dependencies"
-npm install 
+npm --loglevel=silent install 
 
 echo "Copying config template"
 cp config.json.template config.json
