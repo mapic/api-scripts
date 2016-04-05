@@ -20,6 +20,7 @@ Create your own `datacube.json` file from [`datacube.json.template`](https://git
 **Upload and create cube with:**   
 `./upload_datacube.sh datacube.json`.
 
+----
 
 ##### Dependencies:
 - Git: https://git-scm.com/download/
