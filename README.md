@@ -6,7 +6,7 @@ Start by running `./install.sh` script. This will install dependencies and copy 
 
 ### Upload data
 
-Create your own `dataset.json` file from `dataset.json.template`. 
+Create your own `dataset.json` file from [`dataset.json.template`](https://github.com/systemapic/api-scripts/blob/master/dataset.json.template). 
 
 ```json
 {
