@@ -2,7 +2,7 @@
 Scripts in Bash and NodeJS for interacting with the Systemapic API
 
 #### Configuration
-Start by adding your `domain, username, password` to `config.json`. Use the `config.json.sample` file as template.
+Start by running `./install.sh` script. This will install dependencies and copy the config template. You'll also be prompted to add your credentials to the config. The config should end with the message: `You're now ready to use the Systemapic API!`
 
 ### Cubes
-1. Create cube
+1. Create Cubes
