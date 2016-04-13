@@ -31,9 +31,9 @@ This will do the following:
 ### Date parsing
 Dates are added to metadata from filename. 
 
-Currently with [this helper function](https://github.com/systemapic/api-scripts/blob/master/lib/upload_rasters_to_cube.js#L19), where `SCF_MOD_2014_001` is parsed to `Jan 01 2014`.
+Currently with [this helper function](https://github.com/systemapic/api-scripts/blob/master/lib/upload_rasters_to_cube.js#L19), where `SCF_MOD_2014_001.tif` is parsed to `Jan 01 2014`.
 
-It's possible to implement your own date parser, and change [this](https://github.com/systemapic/api-scripts/blob/master/lib/upload_rasters_to_cube.js#L101) fn call.
+It's possible to implement your own date parser, and change [this](https://github.com/systemapic/api-scripts/blob/master/lib/upload_rasters_to_cube.js#L102) fn call.
 
 ----
 
