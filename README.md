@@ -28,6 +28,13 @@ This will do the following:
 5. Add cube layer to project  
 
 
+### Date parsing
+Dates are added to metadata from filename. 
+
+Currently with [this helper function](https://github.com/systemapic/api-scripts/blob/master/lib/upload_rasters_to_cube.js#L19), where `SCF_MOD_2014_001` is parsed to `Jan 01 2014`.
+
+It's possible to implement your own date parser, and change [this](https://github.com/systemapic/api-scripts/blob/master/lib/upload_rasters_to_cube.js#L101) fn call.
+
 ----
 
 #### Dependencies:
