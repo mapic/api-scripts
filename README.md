@@ -38,7 +38,8 @@ You can replace datasets in a cube, by using the `./replace_datasets.sh` script 
 {
     "folder" : "/home/ftp_globesar/2016_02/",
     "cube_id" : "cube-535a0ec3-8705-4215-8c94-8786b9680598",
-    "granularity" : "day"
+    "granularity" : "day",
+    "date_format" : "x_x_YYYYMMDD"
 }
 ```
 
