@@ -43,7 +43,9 @@ You can replace datasets in a cube, by using the `./replace_datasets.sh` script 
 }
 ```
 
-Simply add the `cube_id` for the cube which you would like to replace datasets in, and the folder from which to upload data. The `granularity` option is used when comparing dates of datasets (see below for more info on date parsing). `'day'` is appropriate for daily rasters.
+Simply add the `cube_id` for the cube which you would like to replace datasets in, and the folder from which to upload data. The `granularity` option is used when comparing dates of datasets (see below for more info on date parsing). `'day'` is appropriate for daily rasters. The `date_format` corresponds to the pre-defined functions created to parse date strings (see `Date parsing` below). 
+
+NB: Note that you may have to reload a couple of times in order to get the new datasets showing (work in progress).
 
 To get the `cube_id`:  
 ![get-cubeid](https://cloud.githubusercontent.com/assets/2197944/15475233/561f349e-2109-11e6-8587-55c3cfb37631.gif)
