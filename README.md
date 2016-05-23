@@ -2,14 +2,13 @@
 _Scripts in Bash and NodeJS for interacting with the Systemapic API_
 
 ### Install
-0. Make sure you have [`git`](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed. 
-1. Clone this repository to your localhost: `git clone https://github.com/systemapic/api-scripts.git`
+1. Clone this repository to your localhost: `git clone https://github.com/systemapic/api-scripts.git` (make sure you have [`git`](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed), or download repo as a zip: [https://github.com/systemapic/api-scripts/archive/master.zip](https://github.com/systemapic/api-scripts/archive/master.zip)
 2. Enter folder: `cd api-scripts`
 3. Run `./install.sh` script. This will install dependencies and copy the [config template](https://github.com/systemapic/api-scripts/blob/master/config.json.template). You'll also be prompted to add your credentials to the config. The config should end with the message: `You're now ready to use the Systemapic API!`
 
 ----
 
-### Upload datasets
+## Upload datasets
 
 Create your own `datacube.json` file from [`datacube.json.template`](https://github.com/systemapic/api-scripts/blob/master/datacube.json.template):
 
@@ -31,7 +30,7 @@ This will do the following:
 5. Add cube layer to project  
 
 
-### Replace datasets
+## Replace datasets
 
 You can replace datasets in a cube, by using the `./replace_datasets.sh` script with the `replace_datasets.json` configuration:
 
@@ -47,6 +46,9 @@ Simply add the `cube_id` for the cube which you would like to replace datasets 
 
 To get the `cube_id`:  
 ![get-cubeid](https://cloud.githubusercontent.com/assets/2197944/15475233/561f349e-2109-11e6-8587-55c3cfb37631.gif)
+
+
+----
 
 ### Date parsing
 Dates are added to metadata from filename. 
