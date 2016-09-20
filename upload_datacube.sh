@@ -1,3 +1,3 @@
 #!/bin/bash
 DATACUBE=$1
-node lib/upload_rasters_to_cube.js $DATACUBE
+node lib/upload_datacube.js $DATACUBE

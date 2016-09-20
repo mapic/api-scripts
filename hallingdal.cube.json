@@ -1,0 +1,20 @@
+{
+    "title" : "Hallingdal Snow Cover",
+    "options" : {
+        "type" : "scf",
+        "dateformat" : "YYYYMMDD"
+    },
+    "datasets" : "/home/ftp_globesar/cube_snow/datasets/2016_01/",
+    "masks" : [
+        {
+            "title" : "hallingdal",
+            "geojson" : "/home/ftp_globesar/cube_snow/masks/hallingdal/hallingdal.geojson",
+            "data" : "/home/ftp_globesar/cube_snow/masks/hallingdal/hallingdal.scf.json"
+        },
+        {
+            "title" : "hallingdal2",
+            "geojson" : "/home/ftp_globesar/cube_snow/masks/hallingdal/hallingdal.geojson",
+            "data" : "/home/ftp_globesar/cube_snow/masks/hallingdal/hallingdal.scf.json"
+        }
+    ]
+}
