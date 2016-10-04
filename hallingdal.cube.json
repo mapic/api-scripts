@@ -1,20 +1,22 @@
 {
-    "title" : "Hallingdal Snow Cover",
+    "title" : "Hallingdal Snow Cover - 2015",
     "options" : {
         "type" : "scf",
         "dateformat" : "YYYYMMDD"
     },
-    "datasets" : "/home/ftp_globesar/cube_snow/datasets/2016_01/",
+    "datasets" : "/home/ftp_globesar/cube_snow/datasets/2016/",
     "masks" : [
         {
             "title" : "hallingdal",
+            "description" : "Nedbørsfelt: Hallingdalsvassdraget",
             "geojson" : "/home/ftp_globesar/cube_snow/masks/hallingdal/hallingdal.geojson",
             "data" : "/home/ftp_globesar/cube_snow/masks/hallingdal/hallingdal.scf.json"
         },
         {
-            "title" : "hallingdal2",
-            "geojson" : "/home/ftp_globesar/cube_snow/masks/hallingdal/hallingdal.geojson",
-            "data" : "/home/ftp_globesar/cube_snow/masks/hallingdal/hallingdal.scf.json"
+            "title" : "rjukan",
+            "description" : "Kraftverk: Mår. Areal: 388.45 km2. Årlig tilsig: 313.49 mm",
+            "geojson" : "/home/ftp_globesar/cube_snow/masks/rjukan/rjukan.union.geojson",
+            "data" : "/home/ftp_globesar/cube_snow/masks/rjukan/rjukan.scf.json"
         }
     ]
 }
