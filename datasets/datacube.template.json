@@ -1,0 +1,22 @@
+{
+    "title" : "Project Title",
+    "options" : {
+        "type" : "scf",
+        "dateformat" : "YYYYMMDD"
+    },
+    "datasets" : "/path/to/dataset/folder/",
+    "masks" : [
+        {
+            "title" : "title",
+            "description" : "description",
+            "geojson" : "/path/to/mask.geojson",
+            "data" : "/path/to/mask.data.json"
+        },
+        {
+            "title" : "title",
+            "description" : "description",
+            "geojson" : "/path/to/mask.geojson",
+            "data" : "/path/to/mask.data.json"
+        }
+    ]
+}
