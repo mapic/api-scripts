@@ -3,14 +3,14 @@ _Scripts in Bash and NodeJS for interacting with the Systemapic API_
 
 #### Current scripts
 1. Upload datasets to timeseries (aka a `cube`)
-2. Replace datasets in timeseries
+2. Replace datasets in timeseries  
 _...more to come!_
 
 ## Install
 
 1. Clone this repository to your harddrive,
-2. enter folder
-3. and run install script
+2. Enter folder
+3. Run install script  
 like so:
 
 ```bash
@@ -21,9 +21,8 @@ cd api-scripts
 
 ----
 
-There are two scripts in this repository: 1. Upload datasets and 2. Replace datasets.
 
-## Upload datasets
+### Upload datasets
 
 Create your own `datacube.json` file from [`datacube.json.template`](https://github.com/systemapic/api-scripts/blob/master/datacube.json.template):
 
@@ -63,7 +62,7 @@ This will do the following:
 5. Add cube layer to project  
 
 
-## Replace datasets
+### Replace datasets
 
 You can replace datasets in a cube, by using the `./replace_datasets.sh` script with the `replace_datasets.json` configuration:
 
