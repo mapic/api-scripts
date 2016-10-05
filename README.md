@@ -24,7 +24,7 @@ cd api-scripts
 
 ### Upload datasets
 
-Create your own `datacube.json` file from [`datacube.json.template`](https://github.com/systemapic/api-scripts/blob/master/datacube.json.template):
+Create your own `datacube.json` file from [`datacube.json.template`](https://github.com/systemapic/api-scripts/blob/master/datasets/datacube.template.json):
 
 ```javascript
 {
