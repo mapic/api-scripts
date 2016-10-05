@@ -1,0 +1,6 @@
+{
+    "folder" : "/path/to/folder/",
+    "cube_id" : "cube-long-uuid",
+    "granularity" : "day",
+    "date_format" : "x_x_YYYYMMDD"
+}

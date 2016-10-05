@@ -1,4 +1,4 @@
 config/*
 !config/config.template.json
 node_modules/*
-datacube.json
+config.json
