@@ -2,7 +2,7 @@
 
 function edit_config() {
     read -p "Opening config in your default editor. Press [enter] to continue..."
-    nano config.json
+    nano config/config.json
     check_auth
 }
 
@@ -21,7 +21,9 @@ echo "Installing dependencies"
 npm --loglevel=silent install 
 
 echo "Copying config template"
-cp config.json.template config.json
+cp config/config.template.json config/config.json
+unlink config.json
+ln -s config/config.json config.json
 
 # add creds to config
 edit_config

@@ -6,7 +6,19 @@ _Scripts in Bash and NodeJS for interacting with the Systemapic API_
 2. Enter folder: `cd api-scripts`
 3. Run `./install.sh` script. This will install dependencies and copy the [config template](https://github.com/systemapic/api-scripts/blob/master/config.json.template). You'll also be prompted to add your credentials to the config. The config should end with the message: `You're now ready to use the Systemapic API!`
 
+1. Clone this repository to your harddrive,
+2. enter folder
+3. and run install script.
+
+```bash
+git clone https://github.com/systemapic/api-scripts.git
+cd api-scripts
+./install.sh
+```
+
 ----
+
+There are two scripts in this repository: 1. Upload datasets and 2. Replace datasets.
 
 ## Upload datasets
 
@@ -14,8 +26,26 @@ Create your own `datacube.json` file from [`datacube.json.template`](https://git
 
 ```javascript
 {
-    "folder" : "/home/test-snow/", 	// absolute path of folder containing .tiff's
-    "title" : "Snow raster 11" 		// name of cube
+    "title" : "Hallingdal Snow Cover - 2016",
+    "options" : {
+        "type" : "scf",
+        "dateformat" : "YYYYMMDD"
+    },
+    "datasets" : "/home/ftp/snow/datasets/2016/",
+    "masks" : [
+        {
+            "title" : "hallingdal",
+            "description" : "Nedbørsfelt: Hallingdalsvassdraget",
+            "geojson" : "/home/ftp/snow/masks/hallingdal/hallingdal.geojson",
+            "data" : "/home/ftp/snow/masks/hallingdal/hallingdal.scf.json"
+        },
+        {
+            "title" : "rjukan",
+            "description" : "Kraftverk",
+            "geojson" : "/home/ftp/snow/masks/rjukan/rjukan.union.geojson",
+            "data" : "/home/ftp/snow/masks/rjukan/rjukan.scf.json"
+        }
+    ]
 }
 ```
 
