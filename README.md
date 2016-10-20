@@ -1,7 +1,7 @@
-# Systemapic API scripts
-_Scripts in Bash and NodeJS for interacting with the Systemapic API_
+# Mapic API SDK
+_Scripts in Bash and NodeJS for interacting with Mapic Services._
 
-#### Current scripts
+#### Current SDK's / scripts
 1. Upload datasets to timeseries (aka a `cube`)
 2. Replace datasets in timeseries  
 _...more to come!_
@@ -14,8 +14,8 @@ _...more to come!_
 like so:
 
 ```bash
-git clone https://github.com/systemapic/api-scripts.git
-cd api-scripts
+git clone https://github.com/mapic/sdk.git
+cd sdk
 ./install.sh
 ```
 
@@ -24,7 +24,7 @@ cd api-scripts
 
 ### Upload datasets
 
-Create your own `datacube.json` file from [`datacube.json.template`](https://github.com/systemapic/api-scripts/blob/master/datasets/datacube.template.json):
+Create your own `datacube.json` file from [`datacube.json.template`](https://github.com/mapic/sdk/blob/master/datasets/datacube.template.json):
 
 ```javascript
 {
@@ -93,9 +93,9 @@ To get the `cube_id`:
 ### Date parsing
 Dates are added to metadata from filename. 
 
-Currently with [these helper functions](https://github.com/systemapic/api-scripts/blob/master/lib/upload_rasters_to_cube.js#L20-L38), where `SCF_MOD_2014_001.tif` is parsed to `Jan 01 2014`.
+Currently with [these helper functions](https://github.com/mapic/sdk/blob/master/lib/upload_rasters_to_cube.js#L20-L38), where `SCF_MOD_2014_001.tif` is parsed to `Jan 01 2014`.
 
-It's possible to implement your own date parser, and change [this function call](https://github.com/systemapic/api-scripts/blob/master/lib/upload_rasters_to_cube.js#L113).
+It's possible to implement your own date parser, and change [this function call](https://github.com/mapic/sdk/blob/master/lib/upload_rasters_to_cube.js#L113).
 
 ----
 
