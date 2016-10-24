@@ -23,8 +23,9 @@ cd sdk
 
 ----
 
+## Usage
 
-### Upload datasets
+#### Upload datasets
 
 Create your own `datacube.json` file from [`datacube.json.template`](https://github.com/mapic/sdk/blob/master/datasets/datacube.template.json):
 
@@ -64,7 +65,7 @@ This will do the following:
 5. Add cube layer to project  
 
 
-### Replace datasets
+#### Replace datasets
 
 You can replace datasets in a cube, by using the `./replace_datasets.sh` script with the `replace_datasets.json` configuration:
 
@@ -90,17 +91,16 @@ To get the `cube_id`:
 ![get-cubeid](https://cloud.githubusercontent.com/assets/2197944/15475233/561f349e-2109-11e6-8587-55c3cfb37631.gif)
 
 
-----
 
-### Date parsing
-Dates are added to metadata from filename. 
 
-Currently with [these helper functions](https://github.com/mapic/sdk/blob/master/lib/upload_rasters_to_cube.js#L20-L38), where `SCF_MOD_2014_001.tif` is parsed to `Jan 01 2014`.
+#### Note about date parsing
+> Dates are added to metadata from filename. 
+> 
+> Currently with [these helper functions](https://github.com/mapic/sdk/blob/master/lib/upload_rasters_to_cube.js#L20-L38), where `SCF_MOD_2014_001.tif` is parsed to `Jan 01 2014`.
+> 
+> It's possible to implement your own date parser, and change [this function call](https://github.com/mapic/sdk/blob/master/lib/upload_rasters_to_cube.js#L113).
 
-It's possible to implement your own date parser, and change [this function call](https://github.com/mapic/sdk/blob/master/lib/upload_rasters_to_cube.js#L113).
 
-----
-
-#### Dependencies:
+## Dependencies:
 - Git: https://git-scm.com/download/
 - NodeJS: https://nodejs.org/en/download/
