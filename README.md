@@ -1,5 +1,7 @@
+![Mapic Logo](https://cloud.githubusercontent.com/assets/2197944/19607635/5c434458-97cb-11e6-941b-e74e83b385ba.png)
+
 # Mapic API SDK
-_Scripts in Bash and NodeJS for interacting with Mapic Services._
+Scripts in Bash and NodeJS for interacting with Mapic Services.
 
 #### Current SDK's / scripts
 1. Upload datasets to timeseries (aka a `cube`)
