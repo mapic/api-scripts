@@ -1,21 +1,21 @@
 {
-  "name": "api-scripts",
+  "name": "mapic/sdk",
   "version": "1.0.0",
-  "description": "Scripts in Bash and NodeJS for interacting with the Systemapic API",
+  "description": "Scripts in Bash and NodeJS for interacting with the Mapic API",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/systemapic/api-scripts.git"
+    "url": "https://github.com/mapic/sdk.git"
   },
-  "author": "knutole@systempaic.com",
-  "license": "MIT",
+  "author": "knutole@smapic.io",
+  "license": "GPLv3",
   "bugs": {
-    "url": "https://github.com/systemapic/api-scripts/issues"
+    "url": "https://github.com/mapic/sdk/issues"
   },
-  "homepage": "https://github.com/systemapic/api-scripts",
+  "homepage": "https://github.com/mapic/sdk",
   "dependencies": {
     "async": "^2.0.0-rc.2",
     "fs-extra": "^0.26.7",
