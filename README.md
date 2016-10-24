@@ -21,7 +21,6 @@ cd sdk
 ./install.sh
 ```
 
-----
 
 ## Usage
 
@@ -93,12 +92,12 @@ To get the `cube_id`:
 
 
 
-#### Note about date parsing
-> Dates are added to metadata from filename. 
-> 
-> Currently with [these helper functions](https://github.com/mapic/sdk/blob/master/lib/upload_rasters_to_cube.js#L20-L38), where `SCF_MOD_2014_001.tif` is parsed to `Jan 01 2014`.
-> 
-> It's possible to implement your own date parser, and change [this function call](https://github.com/mapic/sdk/blob/master/lib/upload_rasters_to_cube.js#L113).
+#### Note about date parsing:
+Dates are added to metadata from filename. 
+
+Currently with [these helper functions](https://github.com/mapic/sdk/blob/master/lib/upload_rasters_to_cube.js#L20-L38), where `SCF_MOD_2014_001.tif` is parsed to `Jan 01 2014`.
+
+It's possible to implement your own date parser, and change [this function call](https://github.com/mapic/sdk/blob/master/lib/upload_rasters_to_cube.js#L113).
 
 
 ## Dependencies:
