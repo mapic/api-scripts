@@ -1,14 +1,14 @@
 {
-    "title" : "Hallingdal Snow Cover - 2016",
+    "title" : "All things must perish - 2016",
     "options" : {
         "type" : "scf",
         "dateformat" : "YYYYMMDD"
     },
-    "datasets" : "/home/ftp_globesar/cube_snow/datasets/2016/",
+    "datasets" : "/Users/knutole/mapic/ftp-snow/datasets/2016/",
     "masks" : [
         {
-            "geojson" : "/home/ftp_globesar/cube_snow/masks/hallingdal/hallingdal.geojson",
-            "data" : "/home/ftp_globesar/cube_snow/masks/hallingdal/hallingdal.scf.json",
+            "geojson" : "/Users/knutole/mapic/ftp-snow/masks/hallingdal/hallingdal.geojson",
+            "data" : "/Users/knutole/mapic/ftp-snow/masks/hallingdal/hallingdal.scf.json",
             "meta" : {
                 "title" : "hallingdal",
                 "description" : "description",
@@ -20,8 +20,8 @@
             }
         },
         {
-            "geojson" : "/home/ftp_globesar/cube_snow/masks/rjukan/rjukan.union.geojson",
-            "data" : "/home/ftp_globesar/cube_snow/masks/rjukan/rjukan.scf.json",
+            "geojson" : "/Users/knutole/mapic/ftp-snow/masks/rjukan/rjukan.union.geojson",
+            "data" : "/Users/knutole/mapic/ftp-snow/masks/rjukan/rjukan.scf.json",
             "meta" : {
                 "title" : "rjukan",
                 "description" : "description",
