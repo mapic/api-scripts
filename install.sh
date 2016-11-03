@@ -20,7 +20,7 @@ function check_auth() {
 
 
 echo "Installing dependencies"
-npm --loglevel=silent install 
+docker run -v $PWD:/sdk/ --env MAPIC_DOMAIN -w /sdk/ -it node:4 npm --loglevel=silent install 
 
 if [ ! -f config/config.json ]; then
     echo "Copying config template"

@@ -1,6 +1,6 @@
 {
-	"domain" : "dev.systemapic.com",
-	"username" : "username OR email",
-	"password" : "mysecretpassword",
+	"domain" : "dev.mapic.io",
+	"username" : "hello@mapic.io",
+	"password" : "password",
 	"debug" : false
 }
