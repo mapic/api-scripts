@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Mapic SDK by mapic</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Mapic SDK</h1>
+        <p>Scripts in Bash and NodeJS for interacting with Mapic</p>
+
+        <p class="view"><a href="https://github.com/mapic/sdk">View the Project on GitHub <small>mapic/sdk</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/mapic/sdk/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/mapic/sdk/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/mapic/sdk">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="scripts-in-bash-and-nodejs-for-interacting-with-mapic-services" class="anchor" href="#scripts-in-bash-and-nodejs-for-interacting-with-mapic-services" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Scripts in Bash and NodeJS for interacting with Mapic Services.</h1>
+
+<h4>
+<a id="current-sdks--scripts" class="anchor" href="#current-sdks--scripts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Current SDK's / scripts</h4>
+
+<ol>
+<li>Upload datasets to timeseries (aka a <code>cube</code>)</li>
+<li>Replace datasets in timeseries<br>
+<em>...more to come!</em>
+</li>
+</ol>
+
+<h2>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install</h2>
+
+<ol>
+<li>Clone this repository to your harddrive,</li>
+<li>Enter folder</li>
+<li>Run install script<br>
+like so:</li>
+</ol>
+
+<div class="highlight highlight-source-shell"><pre>git clone https://github.com/mapic/sdk.git
+<span class="pl-c1">cd</span> sdk
+./install.sh</pre></div>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<h4>
+<a id="upload-datasets" class="anchor" href="#upload-datasets" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Upload datasets</h4>
+
+<p>Create your own <code>datacube.json</code> file from <a href="https://github.com/mapic/sdk/blob/master/datasets/datacube.template.json"><code>datacube.json.template</code></a>:</p>
+
+<div class="highlight highlight-source-js"><pre>{
+    <span class="pl-s"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Hallingdal Snow Cover - 2016<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>options<span class="pl-pds">"</span></span> <span class="pl-k">:</span> {
+        <span class="pl-s"><span class="pl-pds">"</span>type<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>scf<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>dateformat<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>YYYYMMDD<span class="pl-pds">"</span></span>
+    },
+    <span class="pl-s"><span class="pl-pds">"</span>datasets<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>/home/ftp/snow/datasets/2016/<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>masks<span class="pl-pds">"</span></span> <span class="pl-k">:</span> [
+        {
+            <span class="pl-s"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>hallingdal<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>description<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Nedbørsfelt: Hallingdalsvassdraget<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>geojson<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>/home/ftp/snow/masks/hallingdal/hallingdal.geojson<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>data<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>/home/ftp/snow/masks/hallingdal/hallingdal.scf.json<span class="pl-pds">"</span></span>
+        },
+        {
+            <span class="pl-s"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>rjukan<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>description<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Kraftverk<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>geojson<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>/home/ftp/snow/masks/rjukan/rjukan.union.geojson<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>data<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>/home/ftp/snow/masks/rjukan/rjukan.scf.json<span class="pl-pds">"</span></span>
+        }
+    ]
+}</pre></div>
+
+<p><strong>Then run script:</strong><br>
+<code>./upload_datacube.sh datacube.json</code>.</p>
+
+<p>This will do the following:<br>
+1. Create a cube<br>
+2. Upload all rasters in folder<br>
+3. Add all rasters to cube<br>
+4. Create a project<br>
+5. Add cube layer to project  </p>
+
+<h4>
+<a id="replace-datasets" class="anchor" href="#replace-datasets" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Replace datasets</h4>
+
+<p>You can replace datasets in a cube, by using the <code>./replace_datasets.sh</code> script with the <code>replace_datasets.json</code> configuration:</p>
+
+<div class="highlight highlight-source-json"><pre>{
+    <span class="pl-s"><span class="pl-pds">"</span>folder<span class="pl-pds">"</span></span> : <span class="pl-s"><span class="pl-pds">"</span>/home/ftp_globesar/2016_02/<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>cube_id<span class="pl-pds">"</span></span> : <span class="pl-s"><span class="pl-pds">"</span>cube-535a0ec3-8705-4215-8c94-8786b9680598<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>granularity<span class="pl-pds">"</span></span> : <span class="pl-s"><span class="pl-pds">"</span>day<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>date_format<span class="pl-pds">"</span></span> : <span class="pl-s"><span class="pl-pds">"</span>x_x_YYYYMMDD<span class="pl-pds">"</span></span>
+}</pre></div>
+
+<p>Simply add the <code>cube_id</code> for the cube which you would like to replace datasets in, and the folder from which to upload data. The <code>granularity</code> option is used when comparing dates of datasets (see below for more info on date parsing). <code>'day'</code> is appropriate for daily rasters. The <code>date_format</code> corresponds to the pre-defined functions created to parse date strings (see <code>Date parsing</code> below). </p>
+
+<p><strong>Then run script:</strong><br>
+<code>./replace_datasets.sh replace_datasets.json</code>.</p>
+
+<p>NB: Note that you may have to reload a couple of times in order to get the new datasets showing (work in progress).</p>
+
+<p>To get the <code>cube_id</code>:<br>
+<img src="https://cloud.githubusercontent.com/assets/2197944/15475233/561f349e-2109-11e6-8587-55c3cfb37631.gif" alt="get-cubeid"></p>
+
+<h4>
+<a id="note-about-date-parsing" class="anchor" href="#note-about-date-parsing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Note about date parsing:</h4>
+
+<p>Dates are added to metadata from filename. </p>
+
+<p>Currently with <a href="https://github.com/mapic/sdk/blob/master/lib/upload_rasters_to_cube.js#L20-L38">these helper functions</a>, where <code>SCF_MOD_2014_001.tif</code> is parsed to <code>Jan 01 2014</code>.</p>
+
+<p>It's possible to implement your own date parser, and change <a href="https://github.com/mapic/sdk/blob/master/lib/upload_rasters_to_cube.js#L113">this function call</a>.</p>
+
+<h2>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dependencies:</h2>
+
+<ul>
+<li>Git: <a href="https://git-scm.com/download/">https://git-scm.com/download/</a>
+</li>
+<li>NodeJS: <a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a>
+</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/mapic">mapic</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
