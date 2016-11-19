@@ -5,26 +5,29 @@ Scripts in Bash and NodeJS for interacting with Mapic Services.
 
 #### Current SDK's / scripts
 1. Upload datasets to timeseries (aka a `cube`)
-2. Replace datasets in timeseries  
+2. Replace datasets in timeseries 
+3. Sync datasets from FTP server 
 _...more to come!_
 
 ## Install
 
 1. Clone this repository to your harddrive,
 2. Enter folder
-3. Run install script  
+3. Run configure script
 like so:
 
 ```bash
 git clone https://github.com/mapic/sdk.git
 cd sdk
-./install.sh
+./configure.sh
 ```
 
 
 ## Usage
 
-#### Upload datasets
+All available scripts are found in the root folder with `api.` prefix.
+
+### Upload datasets
 
 Create your own `datacube.json` file from [`datacube.json.template`](https://github.com/mapic/sdk/blob/master/datasets/datacube.template.json):
 
@@ -64,7 +67,7 @@ This will do the following:
 5. Add cube layer to project  
 
 
-#### Replace datasets
+### Replace datasets
 
 You can replace datasets in a cube, by using the `./replace_datasets.sh` script with the `replace_datasets.json` configuration:
 

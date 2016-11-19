@@ -1,0 +1,50 @@
+{
+    "project" : {
+        "title" : "",
+        "id"    : ""
+    },
+    "cube" : {
+        "title" : "",
+        "id"    : ""
+    },
+    "data" : {
+        "ftp" : {
+            "host"      : "globesar.itek.norut.no",
+            "user"      : "norut",
+            "pass"      : "NorutAnsatt42",
+            "folder"    : "systemapic"
+        },
+
+        "dateformat"    : "YYYYMMDD",
+        "type"          : "scf",
+
+        "masks" : [
+            {
+                "geojson"           : "/home/ftp_globesar/cube_snow/masks/hallingdal/hallingdal.geojson",
+                "data"              : "/home/ftp_globesar/cube_snow/masks/hallingdal/hallingdal.scf.json",
+                "meta" : {
+                    "title"         : "hallingdal",
+                    "description"   : "description",
+                    "område"        : "hallingdal",
+                    "kraftverk"     : "kraftverk",
+                    "feltnavn"      : "feltnavn",
+                    "areal"         : "areal km2",
+                    "årlig tilsig"  : "tilsig mm"
+                }
+            },
+            {
+                "geojson"           : "/home/ftp_globesar/cube_snow/masks/rjukan/rjukan.union.geojson",
+                "data"              : "/home/ftp_globesar/cube_snow/masks/rjukan/rjukan.scf.json",
+                "meta" : {
+                    "title"         : "rjukan",
+                    "description"   : "description",
+                    "område"        : "hallingdal",
+                    "kraftverk"     : "mår",
+                    "feltnavn"      : "feltnavn",
+                    "areal"         : "388.45 km2",
+                    "årlig tilsig"  : "313.49 mm"
+                }
+            }
+        ]
+    }
+}

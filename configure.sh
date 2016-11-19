@@ -8,7 +8,8 @@ function edit_config() {
 
 function check_auth() {
     echo "Authenticating..."
-    AUTHENTICATED=$(docker run -v $PWD:/sdk/ --env MAPIC_DOMAIN -it node:4 node /sdk/lib/test.js)
+    cat config.json
+    AUTHENTICATED=$(docker run -v $PWD:/sdk/ --env MAPIC_DOMAIN -it node:4 node /sdk/lib/verify-config.js)
     if [[ $AUTHENTICATED == *"1"* ]]
     then
         echo "Successfully authenticated! You're now ready to use the Mapic API."
