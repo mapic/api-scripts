@@ -10,8 +10,8 @@
     "type": "git",
     "url": "https://github.com/mapic/sdk.git"
   },
-  "author": "knutole@smapic.io",
-  "license": "GPL-3.0",
+  "author": "knutole@mapic.io",
+  "license": "AGPL",
   "bugs": {
     "url": "https://github.com/mapic/sdk/issues"
   },
