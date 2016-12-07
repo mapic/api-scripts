@@ -22,7 +22,6 @@ cd sdk
 ./configure.sh
 ```
 
-
 ## Usage
 
 All available scripts are found in the root folder with `api.` prefix.
