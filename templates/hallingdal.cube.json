@@ -1,14 +1,14 @@
 {
-    "title" : "All things must perish - 2016",
+    "title" : "Snow",
     "options" : {
         "type" : "scf",
         "dateformat" : "YYYYMMDD"
     },
-    "datasets" : "/Users/knutole/mapic/ftp-snow/datasets/2016/",
+    "datasets" : "/home/ftp-snow/datasets/2016/",
     "masks" : [
         {
-            "geojson" : "/Users/knutole/mapic/ftp-snow/masks/hallingdal/hallingdal.geojson",
-            "data" : "/Users/knutole/mapic/ftp-snow/masks/hallingdal/hallingdal.scf.json",
+            "geojson" : "/home/ftp-snow/masks/hallingdal/hallingdal.geojson",
+            "data" : "/home/ftp-snow/masks/hallingdal/hallingdal.scf.json",
             "meta" : {
                 "title" : "hallingdal",
                 "description" : "description",
@@ -20,8 +20,8 @@
             }
         },
         {
-            "geojson" : "/Users/knutole/mapic/ftp-snow/masks/rjukan/rjukan.union.geojson",
-            "data" : "/Users/knutole/mapic/ftp-snow/masks/rjukan/rjukan.scf.json",
+            "geojson" : "/home/ftp-snow/masks/rjukan/rjukan.union.geojson",
+            "data" : "/home/ftp-snow/masks/rjukan/rjukan.scf.json",
             "meta" : {
                 "title" : "rjukan",
                 "description" : "description",

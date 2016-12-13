@@ -1,23 +1,23 @@
 {
     "ftp" : {
-        "host"      : "",
-        "user"      : "",
-        "pass"      : "",
-        "folder"    : ""
+        "host"      : "globesar.itek.norut.no",
+        "user"      : "norut",
+        "pass"      : "NorutAnsatt42",
+        "folder"    : "systemapic"
     },
 
     "options" : {
-        "project" : "project-ac304168-5446-4f4b-afcf-3b00edd00a7e",
-        "cube" : "cube-693266e9-48b9-4b84-ace4-adab929cb71a",
-        "layer" : "layer-9ee08617-2349-4443-b203-101e3046606d",
+        "project"       : "project-f1d1d6cf-65a1-4b5b-8012-cbcece93942c",
+        "cube"          : "cube-2df10315-78c8-4e8e-8503-cdacbe9d5798",
+        "layer"         : "layer-91acc3dc-c97f-429a-a823-6dc43c2e8eed",
         "dateformat"    : "x_x_YYYYMMDD",
         "type"          : "scf"
     },
     
     "masks" : [
         {
-            "geojson"           : " /Users/knutole/mapic/ftp-snow/masks/hallingdal/hallingdal.geojson",
-            "data"              : " /Users/knutole/mapic/ftp-snow/masks/hallingdal/hallingdal.scf.json",
+            "geojson"           : "/home/ftp-snow/masks/hallingdal/hallingdal.geojson",
+            "data"              : "/home/ftp-snow/masks/hallingdal/hallingdal.scf.json",
             "meta" : {
                 "title"         : "hallingdal",
                 "description"   : "description",
@@ -29,13 +29,13 @@
             }
         },
         {
-            "geojson"           : " /Users/knutole/mapic/ftp-snow/masks/rjukan/rjukan.union.geojson",
-            "data"              : " /Users/knutole/mapic/ftp-snow/masks/rjukan/rjukan.scf.json",
+            "geojson"           : "/home/ftp-snow/masks/rjukan/rjukan.union.geojson",
+            "data"              : "/home/ftp-snow/masks/rjukan/rjukan.scf.json",
             "meta" : {
-                "title"         : "rjukan",
-                "description"   : "description",
-                "område"        : "hallingdal",
-                "kraftverk"     : "mår",
+                "title"         : "Rjukan",
+                "description"   : "",
+                "område"        : "Hallingdal",
+                "kraftverk"     : "Mår",
                 "feltnavn"      : "feltnavn",
                 "areal"         : "388.45 km2",
                 "årlig tilsig"  : "313.49 mm"
