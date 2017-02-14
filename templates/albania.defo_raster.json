@@ -1,0 +1,20 @@
+{
+    // title
+    "title" : "Albania Deformation",
+    
+    // options
+    "options" : {
+
+        // type of layer
+        "type" : "defo_raster",
+
+        // the date format
+        "dateformat" : "YYYYMMDD"
+    },
+
+    // datasets for queries
+    "datasets" : "/Users/knutole/home/globesar-files/albania-deformation/datasets/",
+
+    // mvel dataset, to be displayed
+    "mvel_dataset" : "/Users/knutole/home/globesar-files/albania-deformation/albania_mvel_int16.tif"
+}
