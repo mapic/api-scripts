@@ -9,14 +9,12 @@ Scripts in Bash and NodeJS for interacting with Mapic Services.
 3. Sync datasets from FTP server 
 _...more to come!_
 
-## Dependencies
-You need to install [`git`](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git), and [Docker](https://docs.docker.com/engine/installation/).
-
 ## Install
 
-1. Clone this repository to your harddrive,
-2. Enter folder
-3. Run configure script
+1. Install dependencies: [`git`](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker](https://docs.docker.com/engine/installation/).
+2. Clone this repository to your harddrive,
+3. Enter folder
+4. Run configure script
 like so:
 
 ```bash
