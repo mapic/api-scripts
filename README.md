@@ -3,14 +3,10 @@
 # Mapic API SDK
 Scripts in Bash and NodeJS for interacting with Mapic Services.
 
-#### Current SDK's / scripts
-1. Upload datasets to timeseries (aka a `cube`)
-2. Replace datasets in timeseries 
-3. Sync datasets from FTP server 
-_...more to come!_
+## Usage
+Please see the [wiki](https://github.com/mapic/sdk/wiki) for usage instructions.
 
 ## Install
-
 1. Install dependencies: [Docker](https://docs.docker.com/engine/installation/), [NodeJS](https://nodejs.org/en/download/) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 2. Clone this repository to your harddrive,
 3. Enter folder
@@ -22,6 +18,3 @@ git clone https://github.com/mapic/sdk.git
 cd sdk
 ./configure.sh
 ```
-
-## Usage
-Please see the [wiki](https://github.com/mapic/sdk/wiki) for usage instructions.
