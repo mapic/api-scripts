@@ -11,7 +11,7 @@ _...more to come!_
 
 ## Install
 
-1. Install dependencies: [`git`](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker](https://docs.docker.com/engine/installation/).
+1. Install dependencies: [Docker](https://docs.docker.com/engine/installation/), [NodeJS](https://nodejs.org/en/download/) and [`git`](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 2. Clone this repository to your harddrive,
 3. Enter folder
 4. Run configure script
@@ -25,9 +25,3 @@ cd sdk
 
 ## Usage
 Please see the [wiki](https://github.com/mapic/sdk/wiki) for usage instructions.
-
-
-
-## Dependencies:
-- Git: https://git-scm.com/download/
-- NodeJS: https://nodejs.org/en/download/
