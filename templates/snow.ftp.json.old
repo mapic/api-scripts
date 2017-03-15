@@ -9,10 +9,10 @@
     },
     "data" : {
         "ftp" : {
-            "host"      : "globesar.itek.norut.no",
-            "user"      : "norut",
-            "pass"      : "NorutAnsatt42",
-            "folder"    : "systemapic"
+            "host"      : "",
+            "user"      : "",
+            "pass"      : "",
+            "folder"    : ""
         },
 
         "dateformat"    : "YYYYMMDD",
