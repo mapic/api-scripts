@@ -1,0 +1,20 @@
+{
+    // title
+    "title" : "Project Title",
+    
+    // options
+    "options" : {
+
+        // type of layer
+        "type" : "defo_raster",
+
+        // the date format
+        "dateformat" : "YYYYMMDD"
+    },
+
+    // datasets for queries
+    "datasets" : "/path/to/folder/",
+
+    // mvel dataset, to be displayed
+    "mvel_dataset" : "/path/to/file.tif"
+}
